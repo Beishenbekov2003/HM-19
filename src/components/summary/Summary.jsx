@@ -1,26 +1,24 @@
 import { memo } from "react";
 import styled from "styled-components";
-import  BackgroundImg  from "../../assets/image/summaryImg.jpg";
-import SummaryInfoCard from "../summary/SummaryInfoCard"
+import BackgroundImg from "../../assets/image/summaryImg.jpg";
+import SummaryInfoCard from "../summary/SummaryInfoCard";
 
-const Summary = ()=>{
-return (
-  <Container>
-    <StyledImg src={BackgroundImg} />
-    <SummaryInfoCard/>
-  </Container>
-);
-}
+const Summary = () => {
+  return (
+    <Container>
+      <StyledImg src={BackgroundImg} />
+      <SummaryInfoCard />
+    </Container>
+  );
+};
 
 export default memo(Summary);
 
-
 const Container = styled.div`
-   height: 527;
-`
-    
+  height: 527;
+`;
+
 const StyledImg = styled.img`
   height: 432px;
   width: 100%;
 `;
-

@@ -3,23 +3,6 @@ import styled from "styled-components";
 import MealItem from "./meal-item/MealItem";
 
 const Meals = ({ meals, isLoading, error }) => {
-  console.log(meals);
-  // console.log(isLoading);
-  // const [meals, setMeals] = useState([]);
-
-  // const getMeals = async () => {
-  //   try {
-  //     const responce = await fetchApi("foods");
-  //     setMeals(responce.data);
-  //   } catch (error) {
-  //     console.log("Something wert worht");
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   getMeals();
-  // }, []);
-
   return (
     <Card>
       <ul>

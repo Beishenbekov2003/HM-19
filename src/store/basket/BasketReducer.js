@@ -45,27 +45,28 @@ export const addToBasket = (newItem) => async (dispatch) => {
   }
 };
 
- 
- export const updateBasketItem = ({ id, amount }) => async (dispatch ) => {
+export const updateBasketItem =
+  ({ id, amount }) =>
+  async (dispatch) => {
     try {
-         await fetchApi(`basketitem/${id}/update`, {
+      await fetchApi(`basketitem/${id}/update`, {
         method: "PUT",
         body: { amount },
       });
-      dispatch(getBasket())
+      dispatch(getBasket());
     } catch (error) {
       console.log(error);
     }
   };
 
-  export const deleteBasketItem = (id)=>async (dispatch) => {
-    try {
-       await fetchApi(`basketitem/${id}/delete`, {
-        method: "DELETE",
-      });
-    
-      dispatch(getBasket())
-    } catch (error) {
-      console.log(error);
-    }
-  };
+export const deleteBasketItem = (id) => async (dispatch) => {
+  try {
+    await fetchApi(`basketitem/${id}/delete`, {
+      method: "DELETE",
+    });
+
+    dispatch(getBasket());
+  } catch (error) {
+    console.log(error);
+  }
+};

@@ -9,8 +9,8 @@ const TotalAmount = ({ price, onClose, onOrder }) => {
         Order
       </Button>
     ) : null;
-    const fixedPrice = useMemo(() => price.toFixed(2), [price])
-    return (
+  const fixedPrice = useMemo(() => price.toFixed(2), [price]);
+  return (
     <div>
       <StyledTiltleContainer>
         <StyledTitle>Total Amount</StyledTitle>

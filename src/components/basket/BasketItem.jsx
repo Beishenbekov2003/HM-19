@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../UI/Button";
 
-const BasketItem = ({ title, price, amount,incrementAmount , dec}) => {
-
+const BasketItem = ({ title, price, amount, incrementAmount, dec }) => {
   return (
     <Container>
       <StyledTilte>{title}</StyledTilte>
@@ -13,8 +12,16 @@ const BasketItem = ({ title, price, amount,incrementAmount , dec}) => {
           <AmountStyle>x{amount}</AmountStyle>
         </PriceAndAmountContainer>
         <CounterContainer>
-          <Button style={{width:"70px"}} onClick={dec} variant="outlined">-</Button>
-          <Button  style={{width:"70px"}} onClick={incrementAmount} variant="outlined" >+</Button>
+          <Button style={{ width: "70px" }} onClick={dec} variant="outlined">
+            -
+          </Button>
+          <Button
+            style={{ width: "70px" }}
+            onClick={incrementAmount}
+            variant="outlined"
+          >
+            +
+          </Button>
         </CounterContainer>
       </Content>
     </Container>

@@ -45,7 +45,6 @@ export const getMeals = () => {
       dispatch({ type: mealsActionTypes.GET_MEALS_STARTED });
 
       const { data } = await fetchApi("foods");
-    //   console.log(data);
       dispatch({ type: mealsActionTypes.GET_MEALS_SUCCESS, payload: data });
     } catch (error) {
       dispatch({
@@ -55,5 +54,3 @@ export const getMeals = () => {
     }
   };
 };
-
-

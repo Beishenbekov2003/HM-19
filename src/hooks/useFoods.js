@@ -6,7 +6,6 @@ export const useFoods = () => {
   const dispatch = useDispatch();
   const [sortDirection, setSortDirection] = useState("ASC");
   const { meals, isLoading, error } = useSelector((state) => state.meals);
-//   console.log(isLoading);
 
   useEffect(() => {
    dispatch(getMeals())

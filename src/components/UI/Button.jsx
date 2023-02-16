@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
-const Button = ({ children, variant = "contained", ...restProps}) => {
-  return <StyledButton variant={variant} {...restProps}> {children}</StyledButton>;
+const Button = ({ children, variant = "contained", ...restProps }) => {
+  return (
+    <StyledButton variant={variant} {...restProps}>
+      {" "}
+      {children}
+    </StyledButton>
+  );
 };
 
 export default Button;

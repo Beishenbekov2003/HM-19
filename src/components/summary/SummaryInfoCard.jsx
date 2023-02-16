@@ -29,8 +29,6 @@ const Card = styled.div`
   margin: -12rem auto;
   color: white;
   text-align: center;
-  /* top: 175px; */
-  /* height: 270px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;

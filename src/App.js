@@ -13,7 +13,6 @@ function AppContent() {
 
   const { sortDirection, changesetSortDirection, meals, isLoading, error } =
     useFoods();
-  // console.log(meals);
   const showBasketHnadler = useCallback(() => {
     setBasketVisible((prevState) => !prevState);
   }, []);
@@ -55,17 +54,3 @@ const Content = styled.div`
   justify-content: center;
   position: absolute;
 `;
-/*
-GET /foods
-Headers: { UserID: "your_name"  } 
-GET /basket
-Headers: { UserID: "your_name"  } 
-POST /foods/:foodId/addToBasket
-BODY: { amount: number }
-Headers: { UserID: "your_name"  } 
-DELETE /basketItem/:id/delete
-Headers: { UserID: "your_name"  } 
-PUT /basketItem/:id/update
-BODY: { amount: number }
-Headers: { UserID: "your_name"  }
-*/
